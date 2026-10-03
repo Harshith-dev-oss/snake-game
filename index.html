@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f7f4" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="game-card">
+      <header class="game-header">
+        <div>
+          <p class="eyebrow">ARCADE CLASSIC</p>
+          <h1>Snake Game</h1>
+        </div>
+        <div class="score-card" aria-live="polite">
+          <span class="score-label">SCORE</span>
+          <span id="score">0</span>
+        </div>
+      </header>
+
+      <div class="game-frame">
+        <canvas
+          id="game-board"
+          width="400"
+          height="400"
+          role="img"
+          aria-label="Snake game board"
+        ></canvas>
+        <p id="game-message" class="game-message" aria-live="polite">
+          Press Start Game when you're ready.
+        </p>
+      </div>
+
+      <div class="game-actions">
+        <button id="start-button" class="button button-primary" type="button">
+          Start Game
+        </button>
+        <button id="restart-button" class="button button-secondary" type="button" hidden>
+          Restart Game
+        </button>
+      </div>
+
+      <div class="mobile-controls" aria-label="Touch controls">
+        <button class="direction-button direction-up" data-direction="up" type="button" aria-label="Move up">▲</button>
+        <button class="direction-button direction-left" data-direction="left" type="button" aria-label="Move left">◀</button>
+        <button class="direction-button direction-down" data-direction="down" type="button" aria-label="Move down">▼</button>
+        <button class="direction-button direction-right" data-direction="right" type="button" aria-label="Move right">▶</button>
+      </div>
+
+      <p class="controls-hint">Use the arrow keys or the touch controls to move.</p>
+    </main>
+  </body>
+</html>
