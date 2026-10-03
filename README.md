@@ -1,5 +1,5 @@
 # Snake Game
-
+visit the game here:https://snake-game-omega-five-61.vercel.app/
 A simple, responsive Snake game that runs in your web browser. Guide the snake to eat food, grow longer, and avoid the walls and its own body.
 
 ## Features
@@ -32,3 +32,4 @@ No installation or build step is required.
 ## Author
 
 Created as a beginner-friendly web development project.
+#VISIT THE GAME HERE:
