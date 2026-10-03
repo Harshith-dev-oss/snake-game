@@ -9,7 +9,18 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <main class="game-card">
+    <section id="intro-screen" class="intro-screen" aria-label="NHC GAMES intro">
+      <div class="intro-content">
+        <p class="intro-kicker">WELCOME TO</p>
+        <h1>NHC GAMES</h1>
+        <div class="intro-loader" role="presentation">
+          <span></span>
+        </div>
+        <p class="intro-caption">Getting your game ready...</p>
+      </div>
+    </section>
+
+    <main class="game-card" inert>
       <header class="game-header">
         <div>
           <p class="eyebrow">ARCADE CLASSIC</p>

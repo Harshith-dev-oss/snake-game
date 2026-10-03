@@ -5,6 +5,8 @@ const messageElement = document.getElementById("game-message");
 const startButton = document.getElementById("start-button");
 const restartButton = document.getElementById("restart-button");
 const directionButtons = document.querySelectorAll(".direction-button");
+const introScreen = document.getElementById("intro-screen");
+const gameCard = document.querySelector(".game-card");
 
 const cellSize = 20;
 const cellCount = canvas.width / cellSize;
@@ -299,3 +301,9 @@ restartButton.addEventListener("click", startGame);
 snake = [{ x: 9, y: 10 }, { x: 8, y: 10 }, { x: 7, y: 10 }];
 previousSnake = snake.map((segment) => ({ ...segment }));
 drawGame();
+
+window.setTimeout(() => {
+  introScreen.classList.add("is-dismissed");
+  introScreen.setAttribute("aria-hidden", "true");
+  gameCard.removeAttribute("inert");
+}, 5000);

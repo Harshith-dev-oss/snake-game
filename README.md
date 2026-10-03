@@ -4,6 +4,7 @@ A simple, responsive Snake game that runs in your web browser. Guide the snake t
 
 ## Features
 
+- Five-second NHC GAMES intro screen
 - Centered game board with responsive styling
 - Randomly placed food and a live score
 - Keyboard and touch controls
